@@ -17,7 +17,7 @@ const OrderForm = ({ selectedPackage }) => {
     const orderMessage = `Hi!\nI would like to order:\nPackage: ${selectedPackage.name}\nDate: ${date || 'TBD'}\nTime: ${'TBD'}\nLocation: ${selectedPackage.name ? zone : 'TBD'}\nQuantity: ${quantity}\n${message ? `Message: ${message}` : ''}\nThank you!`
 
     const encodedMessage = encodeURIComponent(orderMessage)
-    window.open(`https://wa.me/2637868855?text=${encodedMessage}`, '_blank')
+    window.open(`https://wa.me/263786828855?text=${encodedMessage}`, '_blank')
   }
 
   if (!selectedPackage) {
